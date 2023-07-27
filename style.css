@@ -107,3 +107,11 @@ video{
     margin-left: 10px;
 }
 
+.cardHighligh{
+    box-shadow: 10px 10px 10px 10px grey;
+}
+
+.cardSelected{
+    border: 5px solid blue;
+}
+

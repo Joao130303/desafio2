@@ -36,7 +36,7 @@
                 </div>
             </div>
             <h3>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h3>
-            <video width="850px" height="510px" controls loop><source src="./videos/Arlequina.mp4" type="video/mp4"></video>
+            <video width="840px" height="510px" controls loop><source src="./videos/Arlequina.mp4" type="video/mp4"></video>
         </div>
     </section>
     <section id="rodape">
@@ -44,13 +44,20 @@
         <h1>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h1>
         </div>
         <div id="cards">
-            <img src="./imgs/qui.svg" alt="">
-            <img src="./imgs/sex.svg" alt="">
-            <img src="./imgs/sab.svg" alt="">
-            <img src="./imgs/dom.svg" alt="">
-            <button>GARANTA O SEU!</button>
+            <img src="./imgs/qui.svg" onclick="selectCard('#quinta')" onmouseover="highlighCard('#quinta')" onmouseout="highlighCard('#quinta')" id="quinta" alt="">
+            <img src="./imgs/sex.svg" onclick="selectCard('#sexta')" onmouseover="highlighCard('#sexta')" onmouseout="highlighCard('#sexta')" id="sexta" alt="">
+            <img src="./imgs/sab.svg" onclick="selectCard('#sabado')" onmouseover="highlighCard('#sabado')" onmouseout="highlighCard('#sabado')" id="sabado" alt="">
+            <img src="./imgs/dom.svg" onclick="selectCard('#domingo')" onmouseover="highlighCard('#domingo')" onmouseout="highlighCard('#domingo')" id="domingo" alt="">
+            <button onclick="showSelectedCards()">GARANTA O SEU!</button>
         </div>
     </section>
-    <script src="index.js"></script>
+    <section>
+        <form action="https://www.google.com">
+            <input type="email" placeholder="Seu e-mail" required >
+            <input type="submit">
+        </form>
+    </section>
+    <script src="cronometro.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
